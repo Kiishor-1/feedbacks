@@ -78,7 +78,7 @@ export default function Home() {
                     <div className="flex items-center relative">
                         <span> Feedbacks</span>
                         <span onClick={handleShow} className="cursor-pointer"> <FaBars /></span>
-                        <div onClick={handleLogout} className={`${dropdown ? 'hidden' : ''} cursor-pointer absolute top-[100%] right-0 text-[1rem] text-white gap-2  flex items-center px-10 py-2 rounded-md bg-[#3D5B59]`}>
+                        <div onClick={handleLogout} className={`${dropdown ? 'block' : 'hidden'} cursor-pointer absolute top-[100%] right-0 text-[1rem] text-white gap-2  flex items-center px-10 py-2 rounded-md bg-[#3D5B59]`}>
                             <FiLogOut />
                             Logout
                         </div>

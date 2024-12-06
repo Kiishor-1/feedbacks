@@ -4,7 +4,7 @@ const ReviewSummary = ({ average, totalRatings, ratingBreakdown }) => {
   if (!totalRatings || totalRatings === 0) {
     return (
       <div className="bg-white p-6 rounded-lg shadow-md text-center">
-        <p className="text-gray-600">No reviews available yet.</p>
+        <p className="text-gray-600 p-8 flex items-center justify-between">No reviews available yet.</p>
       </div>
     );
   }
