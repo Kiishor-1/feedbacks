@@ -56,7 +56,8 @@ const Register = () => {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-r from-blue-50 to-purple-100">
+    <div className="relative flex min-h-screen items-center justify-center bg-gradient-to-r from-blue-50 to-purple-100 p-4">
+      <h1 className='absolute top-1 left-1 text-4xl text-teal-900 p-4 font-bold drop-shadow-[2px_10px_2px_gray]'>Feedbacks</h1>
       <div className="flex w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">
         <div className="hidden lg:flex flex-col items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-500 w-1/2 p-8">
           <img
@@ -66,7 +67,7 @@ const Register = () => {
           />
         </div>
         <div className="w-full lg:w-1/2 p-8">
-          <h2 className="text-2xl font-bold text-gray-800">Welcome to Focus!</h2>
+          <h2 className="text-2xl font-bold text-gray-800">Welcome to Feedbacks!</h2>
           <p className="text-gray-500 mb-6">Register your account</p>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
