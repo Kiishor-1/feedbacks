@@ -59,20 +59,26 @@ export default function Home() {
 
     const handleLogout = async () => {
         try {
-          dispatch(logout())
-          toast.success("User logged out successfully");
-          navigate("/login");
+            dispatch(logout())
+            toast.success("User logged out successfully");
+            navigate("/login");
         } catch (error) {
-          console.log(error);
-          toast.error(error.message || 'Error during logout')
+            console.log(error);
+            toast.error(error.message || 'Error during logout')
         }
-      }
+    }
+
+    if (isLoading) {
+        return <Spinner />
+    }
+
+    if(error){
+        toast.error('Something went wrong');
+        return;
+    }
 
     return (
         <div>
-            {isLoading && <Spinner />}
-            {error && <p>Ran into an error</p>}
-
             <div className="flex md:flex-row flex-col items-start p-2 gap-4 relative">
                 <div className="md:absolute top-0 right-0 text-4xl text-teal-900 p-4 mb-3 md:text-end font-bold drop-shadow-[2px_10px_2px_gray]">
                     <div className="flex items-center relative">
