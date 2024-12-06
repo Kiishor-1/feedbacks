@@ -3,14 +3,14 @@ import ReactStars from "react-stars";
 const ReviewSummary = ({ average, totalRatings, ratingBreakdown }) => {
   if (!totalRatings || totalRatings === 0) {
     return (
-      <div className="bg-white p-6 rounded-lg shadow-md text-center">
-        <p className="text-gray-600 p-8 flex items-center justify-between">No reviews available yet.</p>
+      <div className="w-[95%] max-w-4xl mx-auto self-end bg-white p-6 rounded-lg shadow-md">
+        <p className="text-gray-600 text-center p-8">No reviews available yet.</p>
       </div>
     );
   }
 
   return (
-    <div className="self-end bg-white p-8 rounded-lg shadow-md w-[95%] max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-4">
+    <div className="bg-white p-8 rounded-lg shadow-md w-[95%] max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-4">
       <div className="flex flex-col items-center md:items-star md:w-1/3">
         <h3 className="text-lg font-semibold text-gray-800 mb-2">Average Rating</h3>
         <div className="flex items-center space-x-4 rounded-full h-[150px] w-[150px] justify-center shadow-md p-4 flex-col ">
