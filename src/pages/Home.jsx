@@ -80,11 +80,11 @@ export default function Home() {
     return (
         <div>
             <div className="flex md:flex-row flex-col items-start p-2 gap-4 relative">
-                <div className="md:absolute top-0 right-0 text-4xl text-teal-900 p-4 mb-3 md:text-end font-bold drop-shadow-[2px_10px_2px_gray]">
+                <div className="md:absolute top-0 right-0 md:text-4xl text:4xl text-teal-900 p-4 mb-3 md:text-end font-bold drop-shadow-[2px_10px_2px_gray]">
                     <div className="flex items-center relative">
                         <span> Feedbacks</span>
                         <span onClick={handleShow} className="cursor-pointer"> <FaBars /></span>
-                        <div onClick={handleLogout} className={`${dropdown ? 'block' : 'hidden'} cursor-pointer absolute top-[100%] right-0 text-[1rem] text-white gap-2  flex items-center px-10 py-2 rounded-md bg-[#3D5B59]`}>
+                        <div onClick={handleLogout} className={`${dropdown ? 'block' : 'hidden'} cursor-pointer absolute top-[100%] md:right-0 left-2 text-[1rem] text-white gap-2  flex items-center justify-center md:px-10 px-3 py-1 rounded-md bg-[#3D5B59]`}>
                             <FiLogOut />
                             Logout
                         </div>

@@ -59,21 +59,21 @@ const FeedbackForm = ({ onAddReview }) => {
         </h2>
         <p className="text-gray-600 mb-2">
         </p>
-        <div className="flex justify-evenly mb-6">
+        <div className="flex justify-evenly gap- mb-6">
           {["Terrible", "Bad", "Okay", "Good", "Amazing"].map(
             (option, index) => (
               <button
                 key={index}
                 type="button"
                 onClick={() => handleRatingChange(index + 1)}
-                className={`flex flex-col items-center px-3 py-2 rounded-md border ${
+                className={`flex flex-col items-center md:px-3 md:py-2 justify-evenly p-2 rounded-md md:border ${
                   formData.rating === index + 1
                     ? "border-pink-500 bg-pink-100 text-pink-500"
                     : "border-gray-300 text-gray-500"
                 }`}
               >
                 <span
-                  className={`text-2xl ${
+                  className={`md:text-2xl text-lg ${
                     formData.rating === index + 1 ? "text-pink-500" : "text-gray-400"
                   }`}
                 >

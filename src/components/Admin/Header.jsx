@@ -7,8 +7,8 @@ export default function Header() {
     const currentDate = new Date();
     return (
         <div className="flex items-center justify-between p-2 min-w-[400px]">
-            <div className="text-xl font-semibold text-[#282828] cursor-pointer">
-                Welcome! {user?.name || 'Admin'}
+            <div className="text-xl font-semibold text-[#282828] cursor-pointer uppercase">
+                Welcome! {user?.username || 'Admin'}
             </div>
             <div className="text-[#707070]  font-medium leading-[30px] px-4">
                 {formatDate(currentDate)}
